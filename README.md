@@ -57,25 +57,32 @@ Singleton Pattern was used together with Abstract Factory Method Pattern in orde
 AdministrationFactory, MedicineFactory and Patient Factory.
 
 MedicineFactory Class: (The rest of Factory Classes were composed in the same way.)
+
 [![Medicine-Factory.png](https://i.postimg.cc/DwFw77Rz/Medicine-Factory.png)](https://postimg.cc/ZC7Sczbk)
 
 IFactory Abstraction:
+
 [![2021-09-30-11-47-50.png](https://i.postimg.cc/mg2PWQcD/2021-09-30-11-47-50.png)](https://postimg.cc/TpFdr5JM)
 
 ClientClass which use the Abstract Factory Pattern together with Singleton to create the objects:
+
 [![2021-09-30-11-49-08.png](https://i.postimg.cc/C5hgn4pn/2021-09-30-11-49-08.png)](https://postimg.cc/34c6PmR3)
 
 Prototype Pattern was used in Phone Class as this class is used in other classes and there is a need for cloning the instances:
+
 [![2021-09-30-11-53-40.png](https://i.postimg.cc/tRKcc5M3/2021-09-30-11-53-40.png)](https://postimg.cc/fkv5txZy)
 
 Factory Method Pattern was used in order to create different types of Medical Laboratory Tests:
 I also used Singleton here:
+
 [![2021-09-30-11-59-58.png](https://i.postimg.cc/CK0SV0r4/2021-09-30-11-59-58.png)](https://postimg.cc/4YWrzDgK)
 
 ICreator Abstraction which contains IProduct factoryMethod:
+
 [![2021-09-30-12-01-13.png](https://i.postimg.cc/3r08ptGm/2021-09-30-12-01-13.png)](https://postimg.cc/Z0ZzzFV5)
 
 ClientClass where the objects are created:
+
 [![2021-09-30-12-03-42.png](https://i.postimg.cc/GmLnMK4M/2021-09-30-12-03-42.png)](https://postimg.cc/nCPWrvY7)
 
 Results/Conclusions
