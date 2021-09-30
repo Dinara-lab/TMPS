@@ -4,8 +4,6 @@ import abstract_factory.factories.abstractions.IMedicineStaff;
 import abstract_factory.factories.abstractions.IFactory;
 import models.actors.Doctor;
 import models.actors.LabAssistant;
-import models.data.Phone;
-
 
 public class MedicineFactory implements IFactory {
     private static MedicineFactory medicineFactoryInstance = null;
