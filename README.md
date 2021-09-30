@@ -6,7 +6,7 @@ Creational design patterns are concerned with the way of creating objects.These 
 
 There are 5 types of creational design patterns:
 
-####1. Factory Method Pattern
+###Factory Method Pattern
 
 * Factory Method Pattern allows the sub-classes to choose the type of objects to create.
 * It promotes the loose-coupling by eliminating the need to bind application-specific classes into the code.
