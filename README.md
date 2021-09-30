@@ -37,7 +37,7 @@ There are 5 types of creational design patterns:
 * It provides better control over construction process.
 * It supports to change the internal representation of objects.
 
-##Implementation & Explanation
+Implementation & Explanation
 
 In my laboratory work I have implemented 4 creational design patterns:
 
@@ -78,7 +78,7 @@ ICreator Abstraction which contains IProduct factoryMethod:
 ClientClass where the objects are created:
 [![2021-09-30-12-03-42.png](https://i.postimg.cc/GmLnMK4M/2021-09-30-12-03-42.png)](https://postimg.cc/nCPWrvY7)
 
-##Results/Conclusions
+Results/Conclusions
 
 After implementing Abstract Factory Method I have obtained the following objects:
 
