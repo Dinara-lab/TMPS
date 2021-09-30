@@ -6,25 +6,32 @@ Creational design patterns are concerned with the way of creating objects.These 
 
 There are 5 types of creational design patterns:
 
-###Factory Method Pattern
+1. Factory Method Pattern
 
 * Factory Method Pattern allows the sub-classes to choose the type of objects to create.
 * It promotes the loose-coupling by eliminating the need to bind application-specific classes into the code.
-####2. Abstract Factory Pattern
+
+
+2. Abstract Factory Pattern
 
 * Abstract Factory Pattern isolates the client code from concrete (implementation) classes.
 * It eases the exchanging of object families.
 *It promotes consistency among objects.
-####3. Sigleton Pattern
+
+3. Sigleton Pattern
 
 * Saves memory because object is not created at each request. Only single instance is reused again and again.
-####4. Prototype Pattern
+
+
+4. Prototype Pattern
 
 * It reduces the need of sub-classing.
 * It hides complexities of creating objects.
 * The clients can get new objects without knowing which type of object it will be.
 * It lets you add or remove objects at runtime.
-####5. Builder Pattern
+
+
+5. Builder Pattern
 
 * It provides clear separation between the construction and representation of an object.
 * It provides better control over construction process.
