@@ -45,19 +45,16 @@ In my Laboratory Work I have implemented 3 structural design patterns:
 3. Facade
 
 
-1. I have used the Adapter Pattern in my system to perform a laboratory test. Material is an interface which has the process method. In the class LabTestWork, I have the
-   property of the material. I have the Technical Material Class which has the method of analysis performing. So, I used LabAdapter Class
-   in order to combine Material interface with Technical Material Class to use its method (and not create another one) to achieve the goal.
+
+1. I have used the Adapter Pattern in my system to perform a laboratory test. Material is an interface which has the process method. In the class LabTestWork, I have the property of the material. I have the Technical Material Class which has the method of analysis performing. So, I used LabAdapter Class
+in order to combine Material interface with Technical Material Class to use its method (and not create another one) to achieve the goal.
 
 
 2. Decorator Pattern was used in order to create detailed medical records for the patients.So I have 3 basic medical records in the system:
-   based on patient demographics, diagnose and medications. By using decorator, the client is able to create detailed medical records for different purposes in the future, for instance
-   patientDemographicsAndMedications medical record which will contain both, information about patient demographics and medications.
+   based on patient demographics, diagnose and medications. By using decorator, the client is able to create detailed medical records for different purposes in    the future, for instance patientDemographicsAndMedications medical record which will contain both, information about patient demographics and medications.
    
 
-3. Facade pattern was used in order to perform similar actions  with different categories of visitors. In my system I have designed two classes of visitors based 
-   on their status: registered or unregistered. Class Patient is for registered visitors and class UnregisteredVisitor is for unregistered. For both categories there is a register method and 
-   getMedicalRecord method. They are implemented individually for each category. Facade pattern allows to implement just one single method which will decide the further implementation according to visitor type.
+3. Facade pattern was used in order to perform similar actions  with different categories of visitors. In my system I have designed two classes of visitors based on their status: registered or unregistered. Class Patient is for registered visitors and class UnregisteredVisitor is for unregistered. For both categories there is a register method and getMedicalRecord method. They are implemented individually for each category. Facade pattern allows to implement just one single method which will decide the further implementation according to visitor type.
 
 
 Results/Conclusions
