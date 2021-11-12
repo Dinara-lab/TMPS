@@ -1,9 +1,8 @@
 package models.actors;
 
-import abstract_factory.factories.abstractions.IPatientStaff;
-import models.data.Diagnose;
-import models.data.Email;
-import models.data.Phone;
+import lab1.factories.abstractions.IPatientStaff;
+import lab2.decorator.PatientMedicalRecord;
+import models.data.*;
 import models.actors.abstractions.DoctorDetails;
 
 public class Patient extends Person implements DoctorDetails, IPatientStaff {
@@ -31,6 +30,18 @@ public class Patient extends Person implements DoctorDetails, IPatientStaff {
         return id;
     }
 
+    public static PatientMedicalRecord getMedicalRecord(){
+        PatientMedicalRecord patientDemographicsAndMedications = new PatientDemographics(new Medications(new BasicMedicalRecord()));
+        patientDemographicsAndMedications.record();
+        return patientDemographicsAndMedications;
+    }
+
+    public static void register(){
+        System.out.println("Patient was registered");
+    };
+
+
+
     @Override
     public String toString() {
         return "Patient{" +
@@ -40,18 +51,15 @@ public class Patient extends Person implements DoctorDetails, IPatientStaff {
     }
 
     @Override
-    public void viewDoctors() {
-
+    public  void viewDoctors() {
     }
 
     @Override
     public void viewMedicine() {
-
     }
 
     @Override
     public void viewDoctorSchedule() {
-
     }
 
 

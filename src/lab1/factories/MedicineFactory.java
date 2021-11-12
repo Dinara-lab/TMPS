@@ -1,7 +1,6 @@
-package abstract_factory.factories;
-
-import abstract_factory.factories.abstractions.IMedicineStaff;
-import abstract_factory.factories.abstractions.IFactory;
+package lab1.factories;
+import lab1.factories.abstractions.IMedicineStaff;
+import lab1.factories.abstractions.IFactory;
 import models.actors.Doctor;
 import models.actors.LabAssistant;
 

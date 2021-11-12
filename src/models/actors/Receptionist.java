@@ -1,6 +1,6 @@
 package models.actors;
 
-import abstract_factory.factories.abstractions.IAdministrationStaff;
+import lab1.factories.abstractions.IAdministrationStaff;
 import models.data.Payment;
 
 import java.util.List;

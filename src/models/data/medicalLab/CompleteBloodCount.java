@@ -1,9 +1,14 @@
 package models.data.medicalLab;
 
-import factory_method.abstractions.IProduct;
 
-public class CompleteBloodCount extends LabTest implements IProduct {
+import lab2.decorator.PatientMedicalRecord;
+
+public class CompleteBloodCount extends LabTest  {
     String name = "Complete Blood Count";
+
+    public CompleteBloodCount(PatientMedicalRecord patientMedicalRecord) {
+        super(patientMedicalRecord);
+    }
 
     @Override
     public String toString() {

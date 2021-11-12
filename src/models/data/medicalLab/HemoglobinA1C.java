@@ -1,9 +1,14 @@
 package models.data.medicalLab;
 
-import factory_method.abstractions.IProduct;
 
-public class HemoglobinA1C extends LabTest implements IProduct {
+import lab2.decorator.PatientMedicalRecord;
+
+public class HemoglobinA1C extends LabTest {
     String name = "HemoglobinA1C";
+
+    public HemoglobinA1C(PatientMedicalRecord patientMedicalRecord) {
+        super(patientMedicalRecord);
+    }
 
     @Override
     public String toString() {

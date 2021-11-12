@@ -1,6 +1,6 @@
 package models.actors;
 
-import abstract_factory.factories.abstractions.IMedicineStaff;
+import lab1.factories.abstractions.IMedicineStaff;
 import models.data.medicalLab.LabTest;
 
 import java.util.List;

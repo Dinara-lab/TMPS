@@ -1,5 +1,5 @@
-package abstract_factory.factories;
-import abstract_factory.factories.abstractions.IFactory;
+package lab1.factories;
+import lab1.factories.abstractions.IFactory;
 import models.actors.Admin;
 import models.actors.Pharmassist;
 import models.actors.Receptionist;

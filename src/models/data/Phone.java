@@ -2,18 +2,29 @@ package models.data;
 
 public class Phone {
 
-    private static String phoneNumber = null;
-    private Phone(){}
+    private  String workPhoneNumber;
+
     public void setPhoneNumber(String phoneNumber) {
-        Phone.phoneNumber = phoneNumber;
+        this.workPhoneNumber = phoneNumber;
     }
 
-    public Phone phoneClone(){
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "workPhoneNumber='" + workPhoneNumber + '\'' +
+                '}';
+    }
+
+    private Phone(){}
+
+    public static Phone phoneClone(){
         Phone phone = new Phone();
-        String newPhoneNumber = new String();
+        String newPhoneNumber = "078957643";
         phone.setPhoneNumber(newPhoneNumber);
         return phone;
     }
 
+
 }
+
 

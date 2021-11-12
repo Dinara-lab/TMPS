@@ -1,9 +1,13 @@
 package models.data.medicalLab;
 
-import factory_method.abstractions.IProduct;
+import lab2.decorator.PatientMedicalRecord;
 
-public class BasicMetabolicPanel extends LabTest implements IProduct {
+public class BasicMetabolicPanel extends LabTest  {
     String name = "Basic Metabolic Panel";
+
+    public BasicMetabolicPanel(PatientMedicalRecord patientMedicalRecord) {
+        super(patientMedicalRecord);
+    }
 
     @Override
     public String toString() {

@@ -1,6 +1,6 @@
-package abstract_factory.factories;
+package lab1.factories;
 
-import abstract_factory.factories.abstractions.IFactory;
+import lab1.factories.abstractions.IFactory;
 import models.actors.Patient;
 import models.actors.UnregisteredVisitor;
 

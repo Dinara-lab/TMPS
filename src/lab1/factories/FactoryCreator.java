@@ -1,9 +1,5 @@
-package abstract_factory.factories;
+package lab1.factories;
 
-
-import abstract_factory.factories.AdministrationFactory;
-import abstract_factory.factories.MedicineFactory;
-import abstract_factory.factories.PatientFactory;
 
 public class FactoryCreator {
     public static Object createFactory(String type){

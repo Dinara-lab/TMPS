@@ -1,9 +1,14 @@
 package models.data.medicalLab;
 
-import factory_method.abstractions.IProduct;
 
-public class ProthrombinTime extends LabTest implements IProduct {
+import lab2.decorator.PatientMedicalRecord;
+
+public class ProthrombinTime extends LabTest  {
     String name = "ProthrombinTime";
+
+    public ProthrombinTime(PatientMedicalRecord patientMedicalRecord) {
+        super(patientMedicalRecord);
+    }
 
     @Override
     public String toString() {
