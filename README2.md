@@ -63,12 +63,15 @@ In my Laboratory Work I have implemented 3 structural design patterns:
 Results/Conclusions
 
 Adapter Pattern:
+
 [![2021-11-12-21-30-26.png](https://i.postimg.cc/ZRhrnY4r/2021-11-12-21-30-26.png)](https://postimg.cc/8FtFnSF5)
 
 Decorator Pattern:
+
 [![2021-11-12-21-33-40.png](https://i.postimg.cc/tJcJ1DWL/2021-11-12-21-33-40.png)](https://postimg.cc/tnhpw3r5)
 
 Facade Pattern:
+
 [![2021-11-12-21-35-27.png](https://i.postimg.cc/5tpxYnMn/2021-11-12-21-35-27.png)](https://postimg.cc/SX20HLRM)
 
 
