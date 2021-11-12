@@ -1,11 +1,11 @@
 package models.data;
 
-import lab2.decorator.MRecordDecorator;
+import lab2.decorator.MedicalRecord;
 import lab2.decorator.PatientMedicalRecord;
 
 import java.util.Date;
 
-public class PatientHealthProblems extends MRecordDecorator {
+public class PatientHealthProblems extends MedicalRecord {
 
     String description;
     Date recordedDate;

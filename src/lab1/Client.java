@@ -4,11 +4,11 @@ import lab1.factories.abstractions.IAdministrationStaff;
 import lab1.factories.abstractions.IFactory;
 import lab1.factories.abstractions.IMedicineStaff;
 import lab1.factories.abstractions.IPatientStaff;
-import lab2.adapter.LabAdapter;
+import lab2.adapter.MedicalLab;
 import lab2.adapter.LabTestWork;
 import lab2.adapter.Material;
 import lab2.decorator.PatientMedicalRecord;
-import lab2.facade.Facade;
+import lab2.facade.PersonInformation;
 import models.data.BasicMedicalRecord;
 import models.data.Diagnose;
 import models.data.Medications;
@@ -37,7 +37,7 @@ public class Client {
         // Adapter Pattern
         System.out.println();
         System.out.println("Adapter pattern");
-        Material m =  new LabAdapter();
+        Material m =  new MedicalLab();
         LabTestWork labTestWork = new LabTestWork();
         labTestWork.setMaterial(m);
         labTestWork.performLaboratoryWork();
@@ -69,8 +69,8 @@ public class Client {
         //Facade pattern
         System.out.println();
         System.out.println("Facade pattern");
-        Facade.getPersonalInformation("Patient");
-        Facade.getPersonalInformation("UnregisteredVisitor");
+        PersonInformation.getPersonalInformation("Patient");
+        PersonInformation.getPersonalInformation("UnregisteredVisitor");
 
 
     }

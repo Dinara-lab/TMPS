@@ -46,7 +46,7 @@ In my Laboratory Work I have implemented 3 structural design patterns:
 
 
 1. I have used the Adapter Pattern in my system to perform a laboratory test. Material is an interface which has the process method. In the class LabTestWork, I have the
-   property of the material. I have the Technical Material Class which has the method of analysis performing. So, I used LabAdapter Class
+   property of the material. I have the Technical Material Class which has the method of analysis performing. So, I used MedicalLab Class
    in order to combine Material interface with Technical Material Class to use its method (and not create another one) to achieve the goal.
 
 

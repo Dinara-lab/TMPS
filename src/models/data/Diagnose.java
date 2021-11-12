@@ -1,9 +1,9 @@
 package models.data;
 
-import lab2.decorator.MRecordDecorator;
+import lab2.decorator.MedicalRecord;
 import lab2.decorator.PatientMedicalRecord;
 
-public class Diagnose extends MRecordDecorator {
+public class Diagnose extends MedicalRecord {
 
     private String type;
 

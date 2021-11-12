@@ -1,9 +1,9 @@
 package lab2.decorator;
 
-public class MRecordDecorator implements PatientMedicalRecord {
+public class MedicalRecord implements PatientMedicalRecord {
     protected PatientMedicalRecord patientMedicalRecord;
 
-    public MRecordDecorator(PatientMedicalRecord patientMedicalRecord){
+    public MedicalRecord(PatientMedicalRecord patientMedicalRecord){
         this.patientMedicalRecord = patientMedicalRecord;
     }
 
