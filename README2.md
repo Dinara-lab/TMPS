@@ -60,5 +60,5 @@ Results/Conclusions
 
 In conclusion, by using adapter pattern I was able to make incompatible interfaces to work together (Material and Technical Material). 
 Decorator pattern allowed me to extend functionality of medical record creation. I was able to add additional functionality dynamically.
-The Facade pattern helped me create a unified interface to a set of interfaces in the subsystem.
+The Facade pattern helped me create a unified interface (IPatientStaff) to a set of interfaces in the subsystem.
 Used properly, structural patterns can increase the efficiency of code, enhance its usability and flexibility. They reduce complexity by providing cleaner, simpler interfaces to a system that are easier to understand.
