@@ -1,14 +1,16 @@
 package models.actors;
 
-import lab2.decorator.PatientMedicalRecord;
+import models.data.medicalLab.LabTestWork;
+import models.data.medical_records.abstractions.PatientMedicalRecord;
 import models.actors.abstractions.DoctorDetails;
-import lab1.factories.abstractions.IPatientStaff;
-import models.data.BasicMedicalRecord;
-import models.data.PatientDemographics;
+import factories.abstractions.IPatientStaff;
+import java.util.ArrayList;
 
 public class UnregisteredVisitor implements DoctorDetails, IPatientStaff {
 
     private String name = "UnregisteredVisitor";
+    private int age = 30;
+    private String email = "user123@gmail.com";
     public static void register(){
         System.out.println("New visitor was registered");
     };
@@ -24,9 +26,13 @@ public class UnregisteredVisitor implements DoctorDetails, IPatientStaff {
                 '}';
     }
 
-    public static void getMedicalRecord(){
-        PatientMedicalRecord patientDemographics = new PatientDemographics(new BasicMedicalRecord());
-        patientDemographics.record();
+    public static void getVisitorInformation(UnregisteredVisitor visitor) {
+
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(visitor.name);
+        list.add(visitor.age);
+        list.add(visitor.email);
+        System.out.println(list);
     }
 
 
@@ -46,5 +52,24 @@ public class UnregisteredVisitor implements DoctorDetails, IPatientStaff {
     }
 
 
+    @Override
+    public void setMedicalRecord(PatientMedicalRecord patientMedicalRecord) {
 
+    }
+
+    @Override
+    public void makeAppointment() {
+        System.out.println("The appointment was made for the visitor");
+
+    }
+
+    @Override
+    public void setLabTest(LabTestWork labTestWork) {
+
+    }
+
+    @Override
+    public void getPersonalInformation(String person) {
+        IPatientStaff.super.getPersonalInformation(person);
+    }
 }

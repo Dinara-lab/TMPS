@@ -52,25 +52,16 @@ In my Laboratory Work I have implemented 3 structural design patterns:
 
 2. Decorator Pattern was used in order to create detailed medical records for the patients.So I have 3 basic medical records in the system:
    based on patient demographics, diagnose and medications. By using decorator, the client is able to create detailed medical records for different purposes in the future, for instance
-   patientDemographicsAndMedications medical record which will contain both, information about patient demographics and medications.
+   patientDemographicsAndMedications medical record which will contain both, information about patient demographics and medications. After the medical record is created, it will be set to a specific patient.
    
 
 3. Facade pattern was used in order to perform similar actions  with different categories of visitors. In my system I have designed two classes of visitors based 
    on their status: registered or unregistered. Class Patient is for registered visitors and class UnregisteredVisitor is for unregistered. For both categories there is a register method and 
-   getMedicalRecord method. They are implemented individually for each category. Facade pattern allows to implement just one single method which will decide the further implementation according to visitor type.
+   getMedicalRecord method. They are implemented individually for each category. Facade pattern allows implementing just one single method which will decide the further implementation according to visitor type.
+   After the client was registered as patient or as simple visitor, the appointment to a doctor could be set.
 
 
 Results/Conclusions
-
-Adapter Pattern:
-[![2021-11-12-21-30-26.png](https://i.postimg.cc/ZRhrnY4r/2021-11-12-21-30-26.png)](https://postimg.cc/8FtFnSF5)
-
-Decorator Pattern:
-[![2021-11-12-21-33-40.png](https://i.postimg.cc/tJcJ1DWL/2021-11-12-21-33-40.png)](https://postimg.cc/tnhpw3r5)
-
-Facade Pattern:
-[![2021-11-12-21-35-27.png](https://i.postimg.cc/5tpxYnMn/2021-11-12-21-35-27.png)](https://postimg.cc/SX20HLRM)
-
 
 In conclusion, by using adapter pattern I was able to make incompatible interfaces to work together (Material and Technical Material). 
 Decorator pattern allowed me to extend functionality of medical record creation. I was able to add additional functionality dynamically.

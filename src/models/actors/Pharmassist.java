@@ -1,8 +1,6 @@
 package models.actors;
 
-import lab1.factories.abstractions.IAdministrationStaff;
-
-import java.util.List;
+import factories.abstractions.IAdministrationStaff;
 
 public class Pharmassist extends Staff implements IAdministrationStaff {
     private String name = "Pharmassist";

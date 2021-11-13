@@ -1,7 +1,7 @@
 package models.actors;
 
 import models.actors.abstractions.DoctorDetails;
-import models.data.Phone;
+import models.data.personal_info.Phone;
 import models.structures.Hospital;
 
 import java.util.Set;

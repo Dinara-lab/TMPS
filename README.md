@@ -87,14 +87,6 @@ ClientClass where the objects are created:
 
 Results/Conclusions
 
-After implementing Abstract Factory Method I have obtained the following objects:
-
-[![2021-09-30-12-09-57.png](https://i.postimg.cc/hGns8Zhj/2021-09-30-12-09-57.png)](https://postimg.cc/dhWGwB2P)
-
-Objects obtained after implementing Factory Method:
-
-[![2021-09-30-12-12-34.png](https://i.postimg.cc/P5CJ3dpV/2021-09-30-12-12-34.png)](https://postimg.cc/cvNd6ycf)
-
 After completing this implementation I have reached to the conclusion that Creational Desingn
 Patterns provide object creation mechanisms that can create objects in a controlled manner that are suitable to the situation.In this way, they help reduce complexities and instability, while also offering increased flexibility and allowing for the reuse of code.
 

@@ -1,6 +1,6 @@
 package models.actors;
 
-import lab1.factories.abstractions.IAdministrationStaff;
+import factories.abstractions.IAdministrationStaff;
 
 public class Admin extends AdministrativeStaff implements IAdministrationStaff {
     private String name = "Admin";

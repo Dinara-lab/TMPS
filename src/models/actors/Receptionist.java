@@ -1,7 +1,7 @@
 package models.actors;
 
-import lab1.factories.abstractions.IAdministrationStaff;
-import models.data.Payment;
+import factories.abstractions.IAdministrationStaff;
+import models.data.personal_info.Payment;
 
 import java.util.List;
 

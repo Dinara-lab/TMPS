@@ -1,5 +1,5 @@
 package models.structures;
-import models.data.Phone;
+import models.data.personal_info.Phone;
 import models.actors.Person;
 
 

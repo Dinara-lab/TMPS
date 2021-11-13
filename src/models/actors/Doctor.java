@@ -1,8 +1,8 @@
 package models.actors;
 
-import lab1.factories.abstractions.IMedicineStaff;
-import models.data.Diagnose;
-import models.data.Phone;
+import factories.abstractions.IMedicineStaff;
+import models.data.personal_info.Diagnose;
+import models.data.personal_info.Phone;
 
 import java.util.ArrayList;
 import java.util.List;
