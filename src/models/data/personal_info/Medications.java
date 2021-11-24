@@ -5,10 +5,6 @@ import models.data.medical_records.abstractions.PatientMedicalRecord;
 
 public class Medications extends MedicalRecord {
 
-    private String name;
-    private int dosage;
-    public void consult(){};
-
     public Medications(PatientMedicalRecord patientMedicalRecord) {
         super(patientMedicalRecord);
     }

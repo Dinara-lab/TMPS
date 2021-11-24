@@ -11,13 +11,11 @@ public class UnregisteredVisitor implements DoctorDetails, IPatientStaff {
     private String name = "UnregisteredVisitor";
     private int age = 30;
     private String email = "user123@gmail.com";
+
     public static void register(){
         System.out.println("New visitor was registered");
     };
 
-    public String getName() {
-        return name;
-    }
 
     @Override
     public String toString() {
@@ -26,7 +24,7 @@ public class UnregisteredVisitor implements DoctorDetails, IPatientStaff {
                 '}';
     }
 
-    public static void getVisitorInformation(UnregisteredVisitor visitor) {
+    public static void getInformation(UnregisteredVisitor visitor) {
 
         ArrayList<Object> list = new ArrayList<>();
         list.add(visitor.name);

@@ -4,12 +4,6 @@ import factories.abstractions.IPatientStaff;
 import models.data.medicalLab.LabTestWork;
 import models.data.medical_records.abstractions.PatientMedicalRecord;
 import models.actors.abstractions.DoctorDetails;
-import models.data.medical_records.BasicMedicalRecord;
-import models.data.medical_records.PatientDemographics;
-import models.data.personal_info.Diagnose;
-import models.data.personal_info.Email;
-import models.data.personal_info.Medications;
-import models.data.personal_info.Phone;
 
 import java.util.ArrayList;
 
@@ -17,21 +11,9 @@ public class Patient extends Person implements DoctorDetails, IPatientStaff {
     private String pName = "Patient";
     private int id = 1;
     private int age = 25;
-    private Email email;
-    private Phone contactNo;
-    private Diagnose diagnose;
-
-    public void login(){};
-    public void updateInfo(){};
-    public void logout(){};
-
-    public void cancelAppointment(){};
-    public void viewBill(){};
-    public void viewPrescription(){};
-    public void viewLabTestResults(){};
 
 
-    public static void getPatientInformation(Patient patient){
+    public static void getInformation(Patient patient){
         ArrayList<Object> list = new ArrayList<>();
         list.add(patient.id);
         list.add(patient.age);

@@ -45,19 +45,94 @@ In my Laboratory Work I have implemented 3 structural design patterns:
 3. Facade
 
 
-1. I have used the Adapter Pattern in my system to perform a laboratory test. Material is an interface which has the process method. In the class LabTestWork, I have the
-   property of the material. I have the Technical Material Class which has the method of analysis performing. So, I used MedicalLab Class
-   in order to combine Material interface with Technical Material Class to use its method (and not create another one) to achieve the goal.
+1. I have used the Adapter Pattern in my system to perform a laboratory test. 
+   
+   Material is an interface which has the process method.
+   
+   [![2021-11-24-18-18-18.png](https://i.postimg.cc/QMpKGmbt/2021-11-24-18-18-18.png)](https://postimg.cc/hJttV9NW)    
 
+
+   In the class LabTestWork, I have the property of the material.
+
+   [![2021-11-24-18-20-38.png](https://i.postimg.cc/G2mL7xg6/2021-11-24-18-20-38.png)](https://postimg.cc/3yzQWmTZ)
+
+
+   I have the Technical Material Class which has the method of analysis performing.
+
+   [![2021-11-24-18-22-41.png](https://i.postimg.cc/YSsrPWc9/2021-11-24-18-22-41.png)](https://postimg.cc/Z96zB05t)
+
+
+   So, I used MedicalLab Class in order to combine Material interface with Technical Material Class to use its method (and not create another one) to achieve the goal.
+
+   [![2021-11-24-18-23-36.png](https://i.postimg.cc/7hXQBSct/2021-11-24-18-23-36.png)](https://postimg.cc/RJ6RhJvw)
 
 2. Decorator Pattern was used in order to create detailed medical records for the patients.So I have 3 basic medical records in the system:
-   based on patient demographics, diagnose and medications. By using decorator, the client is able to create detailed medical records for different purposes in the future, for instance
-   patientDemographicsAndMedications medical record which will contain both, information about patient demographics and medications. After the medical record is created, it will be set to a specific patient.
+   based on patient demographics, diagnose and medications. 
+   
+   Patient Demographics:
+
+   [![2021-11-24-18-25-26.png](https://i.postimg.cc/Dw4BsV2M/2021-11-24-18-25-26.png)](https://postimg.cc/Mnx72Ff7)
+
+   Patient Diagnose:
+
+   [![2021-11-24-18-27-20.png](https://i.postimg.cc/9XxpnX0k/2021-11-24-18-27-20.png)](https://postimg.cc/Z0dp9SrP)
+
+   Patient Medications:
+
+   [![2021-11-24-18-28-28.png](https://i.postimg.cc/xj7mmXc9/2021-11-24-18-28-28.png)](https://postimg.cc/kDQD3XQH)
+
+   By using decorator, the client is able to create detailed medical records for different purposes in the future, for instance
+   patientDemographicsAndMedications medical record which will contain both, information about patient demographics and medications. 
+
+   [![2021-11-24-18-30-39.png](https://i.postimg.cc/pVnfqQNm/2021-11-24-18-30-39.png)](https://postimg.cc/YjMLSWC7)
+
+
+   After the medical record is created, it will be set to a specific patient.
    
 
 3. Facade pattern was used in order to perform similar actions  with different categories of visitors. In my system I have designed two classes of visitors based 
-   on their status: registered or unregistered. Class Patient is for registered visitors and class UnregisteredVisitor is for unregistered. For both categories there is a register method and 
-   getMedicalRecord method. They are implemented individually for each category. Facade pattern allows implementing just one single method which will decide the further implementation according to visitor type.
+   on their status: registered or unregistered. 
+   
+   Registered Visitor:
+
+   [![2021-11-24-18-33-37.png](https://i.postimg.cc/FzmHbQ5g/2021-11-24-18-33-37.png)](https://postimg.cc/34Sh7Vwd)
+
+
+   Unregistered Visitor:
+
+   [![2021-11-24-18-34-54.png](https://i.postimg.cc/C1CFx6BZ/2021-11-24-18-34-54.png)](https://postimg.cc/WF3R987j)
+
+
+   For both categories there is a register method and getInformation method. 
+   
+   (implemented in IPatientStaff which is in package abstractions) :
+
+   [![2021-11-24-18-50-38.png](https://i.postimg.cc/RZrJh2qd/2021-11-24-18-50-38.png)](https://postimg.cc/LnT80Ctg)
+
+   Methods were implemented individually for each category.
+   
+   Registered Visitor (Patient):
+
+   1. register method:
+
+   [![2021-11-24-18-45-27.png](https://i.postimg.cc/nLbrVmRP/2021-11-24-18-45-27.png)](https://postimg.cc/xX5ntXSv)
+
+  2. getInformation method:
+
+     [![2021-11-24-18-47-01.png](https://i.postimg.cc/4yVZS2Z4/2021-11-24-18-47-01.png)](https://postimg.cc/T5dZy9pB)
+
+
+   Unregistered Visitor:
+
+  1. register method:
+
+   [![2021-11-24-18-48-12.png](https://i.postimg.cc/sDmbgCnd/2021-11-24-18-48-12.png)](https://postimg.cc/0b6VVFRc)
+   
+  2. getInformation method:
+
+   [![2021-11-24-18-49-40.png](https://i.postimg.cc/3NRmjpHZ/2021-11-24-18-49-40.png)](https://postimg.cc/9R6DCD04)
+  
+  
    After the client was registered as patient or as simple visitor, the appointment to a doctor could be set.
 
 

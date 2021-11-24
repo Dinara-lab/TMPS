@@ -17,11 +17,11 @@ public interface IPatientStaff {
         switch (person){
             case "Patient" :
                 Patient.register();
-                Patient.getPatientInformation(new Patient());
+                Patient.getInformation(new Patient());
                 break;
             case "UnregisteredVisitor" :
                 UnregisteredVisitor.register();
-                UnregisteredVisitor.getVisitorInformation(new UnregisteredVisitor());
+                UnregisteredVisitor.getInformation(new UnregisteredVisitor());
                 break;
         }
 
