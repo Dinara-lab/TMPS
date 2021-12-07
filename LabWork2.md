@@ -113,22 +113,22 @@ In my Laboratory Work I have implemented 3 structural design patterns:
    
    Registered Visitor (Patient):
 
-   1. register method:
+      1. register method:
 
    [![2021-11-24-18-45-27.png](https://i.postimg.cc/nLbrVmRP/2021-11-24-18-45-27.png)](https://postimg.cc/xX5ntXSv)
 
-  2. getInformation method:
+     2. getInformation method:
 
      [![2021-11-24-18-47-01.png](https://i.postimg.cc/4yVZS2Z4/2021-11-24-18-47-01.png)](https://postimg.cc/T5dZy9pB)
 
 
    Unregistered Visitor:
 
-  1. register method:
+      1. register method:
 
    [![2021-11-24-18-48-12.png](https://i.postimg.cc/sDmbgCnd/2021-11-24-18-48-12.png)](https://postimg.cc/0b6VVFRc)
    
-  2. getInformation method:
+      2. getInformation method:
 
    [![2021-11-24-18-49-40.png](https://i.postimg.cc/3NRmjpHZ/2021-11-24-18-49-40.png)](https://postimg.cc/9R6DCD04)
   
