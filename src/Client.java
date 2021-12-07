@@ -9,6 +9,8 @@ import models.data.medical_records.BasicMedicalRecord;
 import models.data.personal_info.Medications;
 import models.data.medical_records.PatientDemographics;
 import models.data.medicalLab.LaboratoryTest;
+import models.data.personal_info.PatientCondition;
+import models.data.medical_states.Undetermined;
 
 
 public class Client {
@@ -47,6 +49,17 @@ public class Client {
         visitor.getPersonalInformation("UnregisteredVisitor");
         patient.makeAppointment();
         visitor.makeAppointment();
+        System.out.println();
+
+        //State pattern
+        System.out.println("State pattern");
+        PatientCondition patientCondition = new PatientCondition();
+        patientCondition.setPatientState(new Undetermined(patientCondition));
+        patient.setHealthState(patientCondition);
+        patientCondition.handle();
+
+
+
 
     }
 }

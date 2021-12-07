@@ -5,9 +5,12 @@ import models.data.medicalLab.LabTestWork;
 import models.data.medical_records.abstractions.PatientMedicalRecord;
 import models.actors.abstractions.DoctorDetails;
 
+import models.data.personal_info.PatientCondition;
+
 import java.util.ArrayList;
 
 public class Patient extends Person implements DoctorDetails, IPatientStaff {
+    private static PatientCondition patientCondition;
     private String pName = "Patient";
     private int id = 1;
     private int age = 25;
@@ -62,5 +65,9 @@ public class Patient extends Person implements DoctorDetails, IPatientStaff {
     @Override
     public void setLabTest(LabTestWork labTestWork) {
 
+    }
+
+    public static void setMedicalState(PatientCondition newPatientCondition){
+        patientCondition = newPatientCondition;
     }
 }
